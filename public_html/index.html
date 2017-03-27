@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>query Interfaces de Usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/codigo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Dccionario</h1>
+        <hr>
+        <div id="acordeon">
+            <h3>Agregar palabra</h3>
+            <div>
+                <h2>Palabra</h2>
+                <form id='agrgar'>
+                    <label>Palabra en español</label><br>
+                    <input type="text" name="textemp"  id="espa"><br>
+                    <label>Palabra en ingles</label><br>
+                    <input type="text" name="textemp"  id="ingl"><br>
+                      <hr>
+                      <input type="button"  value="Enviar datos" name="procesar"  id="procesar" class="botones">
+                    <input type="reset" name="limpíar"  id="limpiar" class="botones"> 
+                </form>
+            </div>
+            
+            <h3>Modificar y eliminar</h3>
+            <div>
+                <h2>Modificacion</h2>
+                <form id="mod">
+                    <label>Palabra en español</label><br>
+                    <input type="text" name="textemp"  id="bus"><br>
+                    <label>Nuevo significado (Solo si no lo va ha eliminar)</label><br>
+                    <input type="text" name="textemp"  id="nuv"><br>
+                    <hr>
+                    <input type="button"  value="Enviar datos" name="procesar"  id="actualizar" class="botones">
+                    <input type="button"  value="Eliminar" name="procesar"  id="borrar" class="botones">
+                    <input type="reset" name="limpíar"  id="limpiar" class="botones">                   
+                </form>
+            </div>
+            <h3>Buscar</h3>
+            <div>
+                 <form id="busca">
+                    <label>Palabra en español</label><br>
+                    <input type="text" name="textemp"  id="busq"><br>
+                    <label>Significado</label><br>
+                    <div id='sing'></div> <br>
+                    <hr>
+                    <input type="button"  value="Buscar" name="procesar"  id="buscar" class="botones">
+                    <input type="reset" name="limpíar"  id="limpiar" class="botones">                   
+                </form>            
+            </div>             
+       </div>               
+    </body>
+</html>
